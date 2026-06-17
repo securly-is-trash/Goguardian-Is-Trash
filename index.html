@@ -1,6 +1,194 @@
 <html>
 <head>
-  
+  <style>
+    @font-face {font-family: 'My Little Pony';src:url(https://dl.dropbox.com/s/gaofrrphg2es3od/PONY%20-%20MLP%202%20-%20Version%202.ttf);}
+        @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&family=Sofia+Sans&family=Exo:wght@500&display=swap");
+
+        :root {
+            --white: #e6d8ff;
+            --font: #e6d8ff;
+            --light: #a791e8;
+            --dark2: #59498a;
+            --dark1: #946adc;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: "Exo", sans-serif;
+        }
+
+        body {
+            background: var(--dark1);
+            color: var(--font);
+        }
+
+        *::selection {
+            background-color: var(--dark2);
+        }
+
+        .header {
+            background-image: url("https://cdn.jsdelivr.net/gh/Entraptadoeztechnology/fluff-s-amazing-tech-time-machine-@refs/heads/main/pictures/IMG_0495.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .header h1 {
+            font-family: "Sofia Sans", sans-serif;
+            font-size: clamp(3rem, 6vw, 6rem);
+            line-height: 1.1;
+            max-width: 1200px;
+            margin: auto;
+            text-shadow: 0 3px 15px rgba(0, 0, 0, .3);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section {
+            padding: 60px 20px;
+        }
+
+        .blue {
+            background-color: var(--light);
+        }
+
+        .green {
+            background-color: var(--dark1);
+        }
+        .sky{
+            background-color:hotpink;
+            color:pink;
+            stroke-color:magenta;
+            background:url('https://cdn.jsdelivr.net/gh/entraptadoeztech/The_Unity_Proxy_Project@refs/heads/main/assets/IMG_0417.gif'), url('https://cdn.jsdelivr.net/gh/entraptadoeztech/The_Unity_Proxy_Project@refs/heads/main/assets/IMG_0423.gif'), url('https://cdn.jsdelivr.net/gh/entraptadoeztech/The_Unity_Proxy_Project@refs/heads/main/assets/IMG_0417.gif');
+        }
+
+        h1 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            margin-bottom: 20px;
+            font-family: My Little Pony;
+        }
+
+        h2 {
+            font-size: clamp(1.4rem, 3vw, 2rem);
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-family: "Space Grotesk", monospace;
+            font-size: clamp(2rem, 4vw, 3rem);
+            text-align: center;
+        }
+
+        p,
+        li {
+            font-size: 2rem;
+            line-height: 1.2;
+            margin-top: 15px;
+        }
+
+        nav {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .nav-btn {
+            background-color: var(--white);
+            color: violet;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 12px;
+            font-family: "Sofia Sans", sans-serif;
+            transition: all .25s ease;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .nav-btn:hover {
+            transform: translateY(-3px);
+            filter: brightness(90%);
+        }
+
+        .profile-link {
+            display: inline-block;
+            background: none;
+            padding: 0;
+            border-radius: 0;
+            text-decoration: none;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            overflow: hidden;
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+
+        th {
+            background: var(--dark2);
+            color: white;
+            padding: 16px;
+        }
+
+        td {
+            background: rgba(255, 255, 255, 0.12);
+            color: white;
+            padding: 16px;
+        }
+
+        th,
+        td {
+            border: 1px solid rgba(255, 255, 255, .2);
+            text-align: center;
+        }
+
+        img {
+            display: block;
+            width: min(500px, 100%);
+            margin: 30px auto;
+            border-radius: 20px;
+            border: 4px solid var(--white);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, .25);
+            transition: transform .3s ease;
+        }
+
+        .profile-link:hover img {
+            transform: scale(1.03);
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                padding: 60px 15px;
+            }
+
+            .section {
+                padding: 40px 15px;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav-btn {
+                width: 280px;
+                text-align: center;
+            }
+        }
 </head>
   <body>
     
